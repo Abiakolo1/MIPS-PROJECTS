@@ -39,13 +39,15 @@ main:
     syscall
     addi $a0, $a0, -67 #add -67 to 111 to get 44, ascii value ,
     syscall
-#addi $a0, $a0, 33 #add 33 to 32 to get the value 65 which is the decimal ascii value of A
-#   syscall
-#   addi $a0, $a0, 38 #add 33 to 65 get 103 which is the decimal ascii value of g
-#   syscall
-#   addi $a0, $a0, 1 #add 1 to 98 to get 104 which is the decimal ascii value of h
-#   syscall
-#   addi $a0, $a0, 7 #add 54 to get 104 to get 157 which is the decimal ascii value of o
+    addi $a0, $a0, -12 #add -12 to 44 to get 32, ascii value of space
+    syscall
+    addi $a0, $a0, 33 #add 33 to 32 to get the value 65 which is the decimal ascii value of A
+    syscall
+    addi $a0, $a0, 38 #add 33 to 65 get 103 which is the decimal ascii value of g
+    syscall
+    addi $a0, $a0, 1 #add 1 to 98 to get 104 which is the decimal ascii value of h
+    syscall
+    addi $a0, $a0, 7 #add 54 to get 104 to get 157 which is the decimal ascii value of o
 #   syscall
 #   addi $a0, $a0 -8 #add -54 to to 157 to get 103 which is the decimal ascii value of g
 #   syscall
