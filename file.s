@@ -20,7 +20,11 @@ main:
     syscall
     addi $a0, $a0, 3 #add 3 to 6 to get the value 9
     syscall
-    
+    li $v0, 11
+    addi $a0, $a0, 1 #add 1 to 9 to get the value 10
+    syscall
+    addi $a0, $a0, 55 #add 10 to 55 to get the value 65 which is the decimal ascii value of A
+    syscall
 #li $v0, 10 #final code to run code and output the code
 #syscall #output and exit program
 
