@@ -53,10 +53,10 @@ main:
     syscall
     addi $a0, $a0 1 #add 1 to 103 to get 104 which is the decimal ascii value h *
     syscall
-#   addi $a0, $a0, 7 #add 53 to 104 to get 157, the decimal value of o
-#   syscall
-#   li $v0, 10 #final code to run code and output the code
-#   syscall #output and exit program
+    addi $a0, $a0, 7 #add 53 to 104 to get 157, the decimal value of o
+    syscall
+    li $v0, 10 #final code to run code and output the code
+    syscall #output and exit program
 
 
 
