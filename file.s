@@ -33,8 +33,12 @@ main:
     syscall
     addi $a0, $a0 -54 #add -54 to to 157 to get 103 which is the decimal ascii value of g
     syscall
-    addi $a0, $a0 1 #add 1 to 103 to get 104 which is the decimal ascii value h
-
+    addi $a0, $a0 1 #add 1 to 103 to get 104 which is the decimal ascii value h *
+    syscall
+    addi $a0, $a0, 53 #add 53 to 104 to get 157, the decimal value of o
+    syscall
+    addi $a0, $a0, -125 #add -125 to 157 to get the decimal value of space
+    syscall
 #li $v0, 10 #final code to run code and output the code
 #syscall #output and exit program
 
