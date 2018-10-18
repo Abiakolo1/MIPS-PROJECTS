@@ -14,5 +14,12 @@ main:
     syscall
     addi $a0, $a0, 3 #add 3 to 8, to get the value 8 again.
     syscall
+    addi $a0, $a0, -4 #add -4 to 8 to get the value 4
+    syscall
+    addi $a0, $a0, 2 #add 2 to 4 to get the value 6
+    syscall
+    addi $a0, $a0, 3 #add 3 to 6 to get the value 9 
+
+
 
 
