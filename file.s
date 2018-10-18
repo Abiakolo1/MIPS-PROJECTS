@@ -18,8 +18,10 @@ main:
     syscall
     addi $a0, $a0, 2 #add 2 to 4 to get the value 6
     syscall
-    addi $a0, $a0, 3 #add 3 to 6 to get the value 9 
-
+    addi $a0, $a0, 3 #add 3 to 6 to get the value 9
+    syscall
+    li $v0, 10
+    syscall
 
 
 
