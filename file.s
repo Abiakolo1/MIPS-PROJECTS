@@ -25,7 +25,11 @@ main:
     syscall
     addi $a0, $a0, 56 #add 56 to 10 to get 66, the ascii value of B
     syscall
-
+    addi $a0, $a0, 39 #add 39 to 56 to get 105, the ascii value of i
+    syscall
+    addi $a0, $a0, -8 #add -8 to 105 to get 97, the ascii value of a
+    syscall
+    addi $a0, $a0, 10 #add 10 to 97 to get 107, ascii value of k
 #addi $a0, $a0, 33 #add 33 to 32 to get the value 65 which is the decimal ascii value of A
 #   syscall
 #   addi $a0, $a0, 38 #add 33 to 65 get 103 which is the decimal ascii value of g
