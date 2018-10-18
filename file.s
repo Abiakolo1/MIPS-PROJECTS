@@ -25,6 +25,12 @@ main:
     syscall
     addi $a0, $a0, 55 #add 10 to 55 to get the value 65 which is the decimal ascii value of A
     syscall
+    addi $a0, $a0, 38 #add 33 to 65 get 103 which is the decimal ascii value of g
+    syscall
+    addi $a0, $a0, 1 #add 1 to 98 to get 104 which is the decimal ascii value of h
+    syscall
+    addi $a0, $a0, 53 #add 54 to get 104 to get 157 which is the decimal ascii value of o
+
 #li $v0, 10 #final code to run code and output the code
 #syscall #output and exit program
 
