@@ -3,7 +3,7 @@ main:
     li $v0, 11 #this call is necessary to print out a character
     la $a0, '@' #this loads the '@' symbol onto the register $a0
     syscall
-    li $v0, 1 #this call is necessary to print out an integer
+    #li $v0, 1 #this call is necessary to print out an integer
     addi $a0, $a0, -64 #to get 0, we add -64 the decimal ascii value of the @ symbol
     syscall
     addi $a0, $a0, 2 #add 2 to 0, to get the value 2 in the register $a0
